@@ -40,8 +40,8 @@ var Comment = Backbone.Model.extend({
   },
   // Add a downvote function; don't forget the comma above.
   downvote: function() {
-    this.set({'votes': this.get('votes') + 1});
-  }
+    this.set({'votes': this.get('votes') - 1});
+  } 
 });
 
 /* - Backbone VIEW ------------------------------------------------------------
